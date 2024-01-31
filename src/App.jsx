@@ -25,8 +25,8 @@ function App() {
     // />
     // <hr />
     <div
-    // className="min-h-screen flex flex-col gap-3"
-    // data-theme={dark ? "dark" : "light"}
+      className="min-h-screen flex flex-col gap-3"
+      // data-theme={dark ? "dark" : "light"}
     >
       <AppRouter />
     </div>
