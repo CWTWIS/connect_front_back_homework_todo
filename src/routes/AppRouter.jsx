@@ -9,6 +9,7 @@ import RegisterForm from "../layouts/RegisterForm";
 import LoginForm from "../layouts/LoginForm";
 import Header from "../layouts/Header";
 import useAuth from "../../hooks/useAuth";
+import HomeworkForm from "../layouts/HomeworkForm";
 
 const routerGuest = createBrowserRouter([
   {
@@ -39,7 +40,7 @@ const routerTeacher = createBrowserRouter([
     errorElement: <Navigate to="/" />,
     children: [
       { index: true, element: <p>Teacher Home</p> },
-      { path: "/new", element: <p>New Homework</p> },
+      { path: "/new", element: <HomeworkForm /> },
     ],
   },
 ]);
